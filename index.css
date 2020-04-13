@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+section{
+	width:100%;
+	height:100vh;
+	font-size: 0;
+}
+
+div{
+	display: inline-block;
+	font-size: 1em;
+}
+
+.h-img{
+	width:50%;
+	height:100%;
+	margin: 0;
+	padding: 0;
+}
+
+.h-txt{	
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+	font-size: 48px;
+}
+
+.logo-img{
+	position: absolute;
+	top:50%;
+}
+
+.h-l-img{
+	background: #333;
+	text-align: right;
+}
+
+.h-r-img{
+	background: #ccc;
+	text-align: left;
+}
+
+.l-h{
+	writing-mode: vertical-rl;
+	
+}
+
+.r-h{
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+}
