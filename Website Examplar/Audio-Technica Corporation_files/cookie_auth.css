@@ -1,0 +1,58 @@
+.fixed-dialog {position: fixed;}
+.fixed-dialog .ui-dialog-titlebar {display: none;}
+.overlay input[type=button] {width: 40%;}
+div.cookie_auth_statment {padding-top:10px;}
+form div.cookie_auth_statment, div.acc_container div.cookie_auth_statment {padding-top:0px; padding-bottom:10px;}
+#cookie-diaglog{padding:20px; border:none;}
+.small {font-size:.7em;}
+div.overlay div.cookie_auth_statment{display:block !important;}
+div.acc_container div.cookie_auth_statment{display:block !important;}
+#xs_dropdowns div.cookie_auth_statment{display:none;}
+#xs_dropdowns input[type=button] {width:45%; margin-top: 10px;}
+
+.ui-widget-content {text-align:center;}
+.ui-dialog-buttonset {text-align:center;margin10px auto;}
+
+#cookie_new {
+    background-color:#00aeef;
+    padding:10px;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+	z-index: 1000;    
+	display:none;
+}
+    
+#cookie_new, #cookie_new p {
+	color:#fff;
+	text-align:center;
+}
+#cookie_new a {
+	text-decoration:underline;
+	color:#fff;
+}
+
+.new-auth-button {
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 3px;
+    text-decoration: none;
+    color:#fff;
+    background: #747474;
+    background: -webkit-linear-gradient(top,#747474 0,#4d4d4d 100%);
+    transition: all .3s ease;
+    padding: .5em 1em;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance: button;
+}
+
+.cookie_text {
+    width:90%;
+    margin:5px auto;
+    font-size:0.9em;
+    line-height:1.1em;
+}
+div#wrap div.cookie_text { font-size: 2em;}
+div#wrap #cookie_new button { font-size: 1.25em;}
