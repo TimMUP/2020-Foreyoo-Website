@@ -1,0 +1,37 @@
+// responsivegridsystem.js
+var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+// Page JS
+$(document).ready(function() {
+	$('g').click(function(e){
+		e.preventDefault();
+		var x = $(this).data('name');
+		$('#'+x).click();
+	});
+	$(".fancybox").fancybox({padding: 0,helpers:{overlay:{css:{'background':'rgba(0, 0, 0, 0.65)'}}}});
+	$('#region').prop('selectedIndex',0);
+	$("#language").chained("#region");
+	$('.acc_container').hide();
+	$('.acc_trigger').click(function(){
+		$('.acc_trigger').removeClass('active').next().slideUp().siblings('.acc_trigger').slideDown();
+		if( $(this).next().is(':hidden') ) {
+			$('.acc_trigger').removeClass('active').next().slideUp();
+			$(this).toggleClass('active').next().slideDown();
+		}
+		return false;
+	});
+	$('li.in a').click(function() {
+		$(".inMessage").slideDown();
+	});
+	// $("select#language").change(function() {
+	// 	if ($(this).val() == "http://www.audio-technica.co.in/") {
+	// 		$("#xsSubmit").hide();
+	// 		$("#smallInMessage").slideDown();
+	// 	}else if ($("#xsSubmit").is(":hidden")) {
+	// 		$("#xsSubmit").show();
+	// 		$("#smallInMessage").slideUp();
+	// 	}
+	// });
+	// $(".inMessage, #smallInMessage").hide();
+});
