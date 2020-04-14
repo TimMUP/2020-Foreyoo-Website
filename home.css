@@ -5,10 +5,11 @@ body{
 	padding:0;
 	overflow-y: hidden;
 	overflow-x: hidden;
+	background: black;
 }
 
 .ld-scr{
-	z-index:1000;
+	z-index:999;
 	background: #000;
 	position: fixed;
 	width:100%;
@@ -16,16 +17,89 @@ body{
 }
 
 .logo-cont{
+	display: block;
 	position: fixed;
 	width: 600px;
 	height:138px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: #fff;
+	z-index:1000;
+}
+
+.logo-cont-trans{
+	transition-duration: 2s;
+	width: 120px;
+	height: 30px;
+	top: 32px;
+	left: 82px;
 }
 
 .logo{
 	width: inherit;
 	height: inherit;
+	top:0;
+	position: fixed;
+}
+
+.logo-trans{
+	width: 120px;
+	height: 30px;
+}
+
+.logo-img{
+	z-index: 1500;
+	margin-left: 160px;
+	opacity: 0;
+	transition-duration: 2s;
+}
+
+.logo-img-trans{
+	opacity: 1;
+	margin-left:0;
+}
+
+
+.logo-sep-bar{
+	z-index: 2000;
+	position: fixed;
+	transition-duration: 1s;
+}
+
+.logo-sep-bar-trans{
+	opacity: 0;
+	z-index: 0;
+}
+
+.logo-txt{
+	z-index: 1000;
+	margin-right: 440px;
+	right:0;
+	opacity: 0;
+	transition-duration: 2s;
+}
+
+.logo-txt-trans{
+	opacity: 1;
+	margin-right: 0;
+}
+
+.msk{
+	position: fixed;
+}
+
+.lft-msk{
+	right: 440px;
+	height: inherit;
+	width: 600px;
+	background: #000;
+	z-index: 1250;
+}
+
+.rght-msk{
+	left: 160px;
+	height: inherit;
+	width: 600px;
+	background: #000;
+	z-index: 1750;
 }
