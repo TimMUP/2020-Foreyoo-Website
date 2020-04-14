@@ -432,8 +432,7 @@ footer {
 	text-align: center
 }
 }
-@media repeat
-}
+
 .za {
 	background: url(../images/flags/za.png) no-repeat
 }
@@ -508,6 +507,8 @@ g {
 g:hover {
 	fill: #8c8c8c
 }
+
+
 .dropbtn {
 	width: 100%;
 	color: black;
