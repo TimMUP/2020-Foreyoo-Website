@@ -1,22 +1,10 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>无标题文档</title>
-
-<link href="home.css" rel="stylesheet" type="text/css">
-
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-</head>
-
-<body>
-<div class="ld-scr">
-  <div class="logo-cont">
-    <div class = "lft-msk"></div>
-      <svg version="1.1" id="logo-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 class="logo" viewBox="0 0 3000 690" enable-background="new 0 0 3000 690" xml:space="preserve">
-        <g>
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M361.614,677.009c-89.912,10.836-227.471-23.81-309.959-152.545
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="3000px" height="690px" viewBox="0 0 3000 690" enable-background="new 0 0 3000 690" xml:space="preserve">
+<g>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M361.614,677.009c-89.912,10.836-227.471-23.81-309.959-152.545
 		C-25.05,404.75-16.814,248.267,72.207,136.971C165.846,19.908,308.138-6.318,412.391,21.077
 		c-14.029,4.671-26.542,8.481-38.811,12.977c-73.848,27.067-147.056,56.208-204.755,111.903
 		C48.093,262.497,55.162,409.283,185.71,527.125c4.761,4.298,9.654,8.451,15.088,12.182
@@ -27,13 +15,7 @@
 		c5.712-2.96,8.789-6.051,9.972-12.491c5.126-27.869,10.794-55.64,16.598-85.137C448.84,140.824,385.112,167,326.94,205.685
 		c-33.229,22.103-62.585,48.312-85.313,81.483c-61.019,89.05-55.986,194.937,13.89,285.015
 		C285.894,611.349,319.951,646.924,361.614,677.009z"/>
-        </g>
-      </svg>
-    <div class = "rght-msk"></div>
-      <svg version="1.1" id="logo-txt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 class="logo" viewBox="0 0 3000 690" enable-background="new 0 0 3000 690" xml:space="preserve">
-        <g>
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M1568.158,239.084c71.176,0.335,125.354-5.489,187.25,5.452
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M1568.158,239.084c71.176,0.335,125.354-5.489,187.25,5.452
 		c36.568,6.458,53.318,29.078,55.737,67.725c2.421,38.659-13.435,60.954-55.706,77.284c22.834,34.736,45.552,69.288,69.359,105.498
 		c-23.037,0-44.277,0.146-65.517-0.248c-1.879-0.033-62.883-99.596-66.83-99.576c-21.381,0.122-42.764,0.057-65.013,0.057
 		c0,33.233,0,65.862,0,99.184c-20.083,0-39.314,0-59.281,0C1568.158,410.107,1568.158,325.625,1568.158,239.084z M1627.559,349.571
@@ -74,10 +56,5 @@
 		c-0.776,2.361-1.002,76.577-1.002,111.579c-20.111,0-39.354,0-59.696,0c0-34.467-0.244-108.618-1.092-111.212
 		c-0.844-2.597-68.026-92.42-99.968-134.917c-1.742-2.328-3.385-4.732-6.222-8.709c22.876,0,43.908-0.203,64.917,0.281
 		c2.365,0.055,5.085,3.67,6.882,6.179C2209.699,275.893,2230.84,305.661,2252.77,336.453z"/>
-        </g>
-      </svg>
-    
-  </div>
-</div>
-</body>
-</html>
+</g>
+</svg>
