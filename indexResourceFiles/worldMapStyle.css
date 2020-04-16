@@ -11,7 +11,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, hr, label, 
 	display: block
 }
 body{
-	overflow-y: hidden;
+	overflow-y:hidden;
 }
 #footercontainer, #headcontainer, #maincontentcontainer, #wrapper {
 	width: 100%
@@ -547,4 +547,18 @@ g:hover {
 }
 .show {
 	display: block;
+}
+#maincontent{
+	width: 80vw;
+	max-width: 120vh;
+}
+#maincontent{
+	left: 50%;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+#footercontainer{
+	position: fixed;
+	bottom: 0;
 }
