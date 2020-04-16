@@ -10,6 +10,16 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <link rel="stylesheet" href="./indexResourceFiles/worldMapStyle.css" media="all">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("path").click(function(){
+			$('.' + $(this).parent().attr("data-name")).children().addClass("frm-trans");
+			$('.' + $(this).parent().attr("data-name")).addClass("bgnd-trans");
+		});
+	});
+	</script>
+
 </head>
 <body class="world" style="background-color:black;">
 <div id="wrapper">
