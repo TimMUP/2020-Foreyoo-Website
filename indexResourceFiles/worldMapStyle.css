@@ -562,3 +562,9 @@ g:hover {
 	position: fixed;
 	bottom: 0;
 }
+.navbar{
+	margin: 12px 0;
+}
+.navbar > button{
+	border: none;
+}
