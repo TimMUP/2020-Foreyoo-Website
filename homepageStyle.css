@@ -104,10 +104,12 @@ body{
 }
 
 .taskbar{
-	width: 100%;
+	width: 1;
+	padding-right: 150px;
 	height: 65px;
 	positon: relative;
 	background-color: black;	
+	text-align: right;
 }
 
 .taskbar h1{
@@ -152,5 +154,22 @@ body{
 	width: 100%;
 	height: 1000px;
 	position: relative;
-	background-color: aqua;
+	background-color: dimgray;
+}
+
+.productContainer{
+	width: 1;
+	height: 1000px;
+	position: relative;
+	background-color: black;
+}
+
+.footerContainer{
+	width: 1;
+	height: 300px;
+	position: relative;
+	padding: 50px 300px 50px 300px;
+	background-color: #0d0d0d;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: white;
 }
