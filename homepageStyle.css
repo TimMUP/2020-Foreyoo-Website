@@ -103,6 +103,9 @@ body{
 	z-index: 1750;
 }
 
+
+/*########################*/
+/*Taskbar Division Styling*/
 .taskbar{
 	width: 1;
 	padding-right: 150px;
@@ -119,13 +122,13 @@ body{
 	color: gray;
 }
 
+/*Hover Underline Animation*/
 .taskbar h1 > a{
 	position: relative;
 	font-family: 'Manrope', sans-serif;
 	font-size: 16px;
 	color: gray;
 	text-decoration: none;
-	
 }
 
 .taskbar h1 > a:hover{
@@ -151,25 +154,131 @@ body{
 }
 
 .slideshow{
+	font-family: 'Open Sans', sans-serif;
 	width: 100%;
 	height: 1000px;
 	position: relative;
 	background-color: dimgray;
 }
 
+
+/*########################*/
+/*Product Division Styling*/
 .productContainer{
 	width: 1;
 	height: 1000px;
 	position: relative;
 	background-color: black;
+	text-align: center;
+	border: dashed;
+	border-color: blanchedalmond;
 }
 
+.innerProductContainer{
+	font-family: 'Open Sans', sans-serif;
+	width: 1200px;
+	height: 100%;
+	padding: 0;
+	display: inline-block;
+	background-color: black;
+	color: white;
+	border: dotted;
+	border-color: blanchedalmond;
+}
+
+.innerProductContainer h1{
+	margin: 0;
+	font-size: 100px;
+	font-weight: lighter;
+	text-align: left;
+	color: lightgray;
+}
+
+
+/*#########################*/
+/*About Us Division Styling*/
+.aboutUsContainer{
+	width: 1;
+	height: 1000px;
+	position: relative;
+	background-color: black;
+	text-align: center;
+	border: dashed;
+	border-color: blanchedalmond;
+}
+
+.innerAboutUsContainer{
+	font-family: 'Open Sans', sans-serif;
+	width: 1200px;
+	height: 100%;
+	padding: 0;
+	display: inline-block;
+	background-color: black;
+	color: white;
+	border: dotted;
+	border-color: blanchedalmond;
+}
+
+.innerAboutUsContainer h1{
+	margin: 0;
+	font-size: 100px;
+	font-weight: lighter;
+	text-align: left;
+	color: lightgray;
+}
+
+
+/*##########################*/
+/*Inquiries Division Styling*/
+.inquiriesContainer{
+	width: 1;
+	height: 1000px;
+	position: relative;
+	background-color: black;
+	text-align: center;
+	border: dashed;
+	border-color: blanchedalmond;
+}
+
+.innerInquiriesContainer{
+	font-family: 'Open Sans', sans-serif;
+	width: 1200px;
+	height: 100%;
+	padding: 0;
+	display: inline-block;
+	background-color: black;
+	color: white;
+	border: dotted;
+	border-color: blanchedalmond;
+}
+
+.innerInquiriesContainer h1{
+	margin: 0;
+	font-size: 100px;
+	font-weight: lighter;
+	text-align: left;
+	color: lightgray;
+}
+
+
+/*#######################*/
+/*Footer Division Styling*/
 .footerContainer{
 	width: 1;
 	height: 300px;
 	position: relative;
-	padding: 50px 300px 50px 300px;
 	background-color: #0d0d0d;
+	text-align: center;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	color: white;
+}
+
+footer{
+	width: 1200px;
+	height: 280px;
+	padding: 10px 0;
+	display: inline-block;
+	text-align: left;
+	border: dashed;
+	border-color: blanchedalmond;
 }

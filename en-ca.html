@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Foreyoo Canada</title>
 		<link href="homepageStyle.css" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Manrope|Open+Sans&display=swap" rel="stylesheet">
 		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
 
@@ -37,12 +37,43 @@
 					}, 1500);
 				}, 1000);
 			});
+			
+			/*Launches once JQuery and Document is Loaded for Viewing*/
 			$(document).ready(function(){
+				
 				if(stp1)
 					Enter();
 				else stp2 = true;
+				
+				/*Code for Fliud Scrolling to Divs [JQuery]*/
+				//Product Div Srolling
+				$("#productButton").click(function(pB) {
+					pB.preventDefault();
+
+				$('html, body').animate({
+					scrollTop: $(".productContainer").offset().top
+					}, 500);
+				});
+				
+				//About Us Div Srolling
+				$("#aboutUsButton").click(function(aB) {
+					aB.preventDefault();
+
+				$('html, body').animate({
+					scrollTop: $(".aboutUsContainer").offset().top
+					}, 500);
+				});
+				
+				//Inquiries Div Srolling
+				$("#inquiriesButton").click(function(iB) {
+					iB.preventDefault();
+
+				$('html, body').animate({
+					scrollTop: $(".inquiriesContainer").offset().top
+					}, 500);
+				});
 			});
-			
+				
 			</script>
 
 	</head>
@@ -121,21 +152,30 @@
 		</div>
 	  
 		<div class="taskbar">
-			<h1 style="left: 200px;"><a href="#">Products</a></h1>
-			<h1 style="left: 300px;"><a href="#">About Us</a></h1>
-			<h1 style="left: 400px;"><a href="#">Inquiries</a></h1>
+			<h1 id="productButton" style="left: 200px;"><a href="#">Products</a></h1>
+			<h1 id="aboutUsButton" style="left: 300px;"><a href="#">About Us</a></h1>
+			<h1 id="inquiriesButton" style="left: 400px;"><a href="#">Inquiries</a></h1>
 			<h1 style="display: inline-block"><a href="./index.html">Canada | English</a></h1>
 		</div>
 		
 		<div class="slideshow"></div>
 		
 		<div class="productContainer">
+			<div class="innerProductContainer">
+				<h1>Products</h1>
+			</div>
 		</div>
 		
 		<div class="aboutUsContainer">
+			<div class="innerAboutUsContainer">
+				<h1>ABOUT US</h1>
+			</div>
 		</div>
 		
 		<div class="inquiriesContainer">
+			<div class="innerInquiriesContainer">
+				<h1>Inquiries</h1>
+			</div>
 		</div>
 		
 		<div class="footerContainer">
