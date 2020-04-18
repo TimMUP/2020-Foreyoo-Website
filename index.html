@@ -10,6 +10,27 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <link rel="stylesheet" href="./indexResourceFiles/worldMapStyle.css" media="all">
+<link href="pop-up.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("path").click(function(){
+			var region = '.' + $(this).parent().attr("data-name")
+			$(region).fadeIn(500);
+			setTimeout(function(){
+			$(region).children().addClass("frm-trans");}, 100);
+		});
+		$(".region_us").click(function(){
+			$(this).fadeOut(300);
+			$(this).children().removeClass("frm-trans");
+		});
+		$(".region_ca").click(function(){
+			$(this).fadeOut(300);
+			$(this).children().removeClass("frm-trans");
+		});
+	});
+	</script>
+
 </head>
 <body class="world" style="background-color:black;">
 <div id="wrapper">
@@ -92,32 +113,47 @@
 							}
 						</style>
       </div>
-	  </div>
-    	<!--Mobile Drop-Down Menu--> 
-		<!--Import Java Script-->
-    	<script type="text/javascript" src="index.js"></script>
-    	<div id="countries">
-      		<div class="navbar">
-        		<button onClick="dropCaFunction()" class="dropbtn" >Canada</button>
-        			<div id="mobileCaDropdown" class="dropdownContent">
-						<a href="en-ca.html">Ca | English</a>
-						<a href="#FrenchCa">Ca | French</a>
-		  			</div>
-      			</div>
-      		<div class="navbar">
-        		<button onClick="dropUsFunction()" class="dropbtn" >United States</button>
-        			<div id="mobileUsDropdown" class="dropdownContent">
-						<a href="#EnglishUs">USA | English</a>
-						<a href="#SpanishUs">USA | Spanish</a> </div>
-      				</div>
-    			</div>
-  			</div>
-		</div>
-		<div id="footercontainer">
-  			<footer class="group">
-    			<p>© 2020. Foreyoo Corporation. All Rights Reserved</p>
-  			</footer>
-		</div>
-		<div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.7618309823561462"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.48549234418989573" width="0" height="0" alt="" src="./indexResourceFiles/0"> </div>
-	</body>
+    </div>
+    
+    <!--Mobile Drop-Down Menu--> 
+    <script type="text/javascript" src="index.js"></script> <!--Import Java Script-->
+    <div id="countries">
+      <div class="navbar">
+        <button onClick="dropCaFunction()" class="dropbtn" >Canada</button>
+        <div id="mobileCaDropdown" class="dropdownContent"> <a href="en-ca.html">Ca | English</a> <a href="#FrenchCa">Ca | French</a> </div>
+      </div>
+      <div class="navbar">
+        <button onClick="dropUsFunction()" class="dropbtn" >United States</button>
+        <div id="mobileUsDropdown" class="dropdownContent"> <a href="#EnglishUs">USA | English</a> <a href="#SpanishUs">USA | Spanish</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footercontainer">
+  <footer class="group">
+    <p>© 2020. Foreyoo Corporation. All Rights Reserved</p>
+  </footer>
+</div>
+<div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.7618309823561462"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.48549234418989573" width="0" height="0" alt="" src="./indexResourceFiles/0"> </div>
+
+<!--pop up-->
+<div class="region_us pop-up-cont">
+	<div class=" pop-up">
+		<div class="pop-up-head"><h2>Please Select Your Language</h2></div>
+		<ul class="pop-up-lst">
+			<li><a href="en-us.html">English</a></li>
+			<li><a href="es-us.html">Español</a></li>
+		</ul>
+	</div>
+</div>
+<div class="region_ca pop-up-cont">
+	<div class=" pop-up">
+		<div class="pop-up-head"><h2>Please Select Your Language</h2></div>
+		<ul class="pop-up-lst">
+			<li><a href="en-ca.html">English</a></li>
+			<li><a href="fr-ca.html">Francés</a></li>
+		</ul>
+	</div>
+</div>
+</body>
 </html>
