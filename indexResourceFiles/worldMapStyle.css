@@ -10,6 +10,9 @@ hr, img {
 article, aside, details, figcaption, figure, footer, header, hgroup, hr, label, menu, nav, section, ul li a {
 	display: block
 }
+body{
+	overflow-y:hidden;
+}
 #footercontainer, #headcontainer, #maincontentcontainer, #wrapper {
 	width: 100%
 }
@@ -215,6 +218,10 @@ background-color:#ccc
 }
 .bottomWorldLogo, .button, .selectorLogo, .topWorldLogo, header {
 	text-align: center
+}
+.topWorldLogo{
+	width: 20vw;
+	max-width: 360px;
 }
 header {
 	padding: 1em 0 0
@@ -541,4 +548,24 @@ g:hover {
 }
 .show {
 	display: block;
+}
+#maincontent{
+	width: 80vw;
+	max-width: 120vh;
+}
+#maincontent{
+	left: 50%;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+#footercontainer{
+	position: fixed;
+	bottom: 0;
+}
+.navbar{
+	margin: 12px 0;
+}
+.navbar > button{
+	border: none;
 }
