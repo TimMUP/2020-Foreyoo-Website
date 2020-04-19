@@ -176,30 +176,55 @@ body{
 	position: relative;
 	background-color: black;
 	text-align: center;
-	border: dashed;
-	border-color: blanchedalmond;
+	/*border: dashed;
+	border-color: blanchedalmond;*/
 }
 
 .innerProductContainer{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Share Tech Mono', monospace;
 	width: 1200px;
 	height: 100%;
 	padding: 0;
 	display: inline-block;
 	background-color: black;
 	color: white;
-	border: dotted;
-	border-color: blanchedalmond;
+	/*border: dotted;
+	border-color: blanchedalmond;*/
 }
 
 .innerProductContainer h1{
+	position: relative;
+	top: 600px;
+	right: 560px;
 	margin: 0;
-	font-size: 100px;
+	font-size: 80px;
 	font-weight: lighter;
 	text-align: left;
+	transform: rotate(90deg);
+	letter-spacing: 10px;
 	color: lightgray;
+	/*Webkit Gradient for Text*/
+	background: linear-gradient(90deg, #ebebeb, #000000);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	background-size: 500px 1px;
+	background-position: -80px;
+	
+	/*Transition for Background Fade on Hover*/
+	-webkit-transition: background 1s ease-out;
+    -moz-transition: background 1s ease-out;
+    -o-transition: background 1s ease-out;
+    transition: background 1s ease-out;
 }
 
+.innerProductContainer h1:hover{
+	/*Moving Gradient to Fit*/
+	background-position: 0px;
+}
+
+.innerProductContainer a{
+	text-decoration: none;
+}
 
 /*#########################*/
 /*About Us Division Styling*/
