@@ -77,7 +77,21 @@
 			</script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				
+				var oldScroll = 0;
+				$(window).scroll(function(){
+					if($(window).scrollTop() > 0){
+						if(oldScroll > $(window).scrollTop())
+							$(".taskbar").addClass("taskbar-fix").fadeIn(500);
+						else
+							$(".taskbar").fadeOut(500);
+					}
+					else{
+						$(".taskbar").removeClass("taskbar-fix");
+					 	if(!$(".taskbar").is(":visible"))
+							$(".taskbar").fadeIn(500);
+					}
+					oldScroll = $(window).scrollTop();
+				});
 			});
 		</script>
 
@@ -85,7 +99,7 @@
 
 	<body>
 		<div class="ld-scr"></div>
-		<div class="logo-cont">
+		<a href="en-ca" class="logo-cont">
 			<div class = "lft-msk msk"></div>
 			<svg version="1.1" 
 			 class="logo logo-img" viewBox="0 0 3000 690" enable-background="new 0 0 3000 690">
@@ -154,13 +168,13 @@
 				c2.365,0.055,5.085,3.67,6.882,6.179C2209.699,275.893,2230.84,305.661,2252.77,336.453z"/>
 			  </g>
 			</svg>
-		</div>
+		</a>
 	  
 		<div class="taskbar">
 			<h1 id="productButton" style="left: 200px;"><a href="#">Products</a></h1>
 			<h1 id="aboutUsButton" style="left: 300px;"><a href="#">About Us</a></h1>
 			<h1 id="inquiriesButton" style="left: 400px;"><a href="#">Inquiries</a></h1>
-			<h1 style="display: inline-block"><a href="./index.html">Canada | English</a></h1>
+			<h1 style="float:right"><a href="./index.html">Canada | English</a></h1>
 		</div>
 		
 		<div class="slideshow"></div>
