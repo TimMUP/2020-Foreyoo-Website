@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Foreyoo Canada</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 		<link href="homepageStyle.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Manrope|Open+Sans|Share+Tech+Mono&display=swap" rel="stylesheet">
 		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
@@ -74,7 +78,7 @@
 				});
 			});
 				
-			</script>
+			</script><!--loading screen animation-->
 		<script type="text/javascript">
 			$(document).ready(function(){
 				var oldScroll = 0;
@@ -93,7 +97,29 @@
 					oldScroll = $(window).scrollTop();
 				});
 			});
-		</script>
+		</script><!--taskbar hide on scroll down-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var ForeyooHomeSlider = new Swiper('.swiper-container',{
+					effect:'coverflow',
+					slidesPerView: 1,
+					loop:true,
+					pagination:{
+						el: '.swiper-pagination',
+						clickable: true,
+						
+					},
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+					autoplay: {
+						delay: 25000,
+						disableOnInteraction: false,
+					},
+				});
+			});
+		</script><!--swiper slide API initialization-->
 
 	</head>
 
@@ -177,7 +203,44 @@
 			<h1 style="float:right"><a href="./index.html">Canada | English</a></h1>
 		</div>
 		
-		<div class="slideshow"></div>
+		<div class="swiper-container">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+     				<div style="background-image: url(Resources/home/img/F4-Mi-Note10-PC02.jpg)" class="swiper-img"></div>
+					<div class="title" data-swiper-parallax="-300">Title</div>
+					<div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+					<a class="button" data-swiper-parallax="-100">Button</a>
+				</div>
+				<div class="swiper-slide">
+     				<div style="background-image: url(Resources/home/img/Global-j1PC.png)" class="swiper-img"></div>
+					<div class="title" data-swiper-parallax="-300">Title</div>
+					<div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+					<a class="button" data-swiper-parallax="-100">Button</a>
+				</div>
+				<div class="swiper-slide">
+     				<div style="background-image: url(Resources/home/img/Global-j2-BannePC.jpg)" class="swiper-img"></div>
+					<div class="title" data-swiper-parallax="-300">Title</div>
+					<div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+					<a class="button" data-swiper-parallax="-100">Button</a>
+				</div>
+				<div class="swiper-slide">
+     				<div style="background-image: url(Resources/home/img/j6a-pc-banner.jpg)" class="swiper-img"></div>
+					<div class="title" data-swiper-parallax="-300">Title</div>
+					<div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+					<a class="button" data-swiper-parallax="-100">Button</a>
+				</div>
+				...
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+		</div>
 		
 		<div class="productContainer">
 			<div class="innerProductContainer">

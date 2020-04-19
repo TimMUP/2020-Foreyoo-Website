@@ -5,6 +5,7 @@ body{
 	padding:0;
 	overflow-x: hidden;
 	background: black;
+	font-family: 'Share Tech Mono', monospace;
 }
 
 .ld-scr{
@@ -159,14 +160,72 @@ body{
 	opacity: 1;
 }
 
-.slideshow{
+/*########################*/
+/*Slider Styling*/
+.swiper-container{
 	font-family: 'Open Sans', sans-serif;
 	width: 100%;
 	height: calc(50vw + 50px);
+	max-height: 80vh;
 	position: relative;
-	background-color: dimgray;
 }
 
+.swiper-pagination-bullet{
+	border: solid 1px aliceblue;	
+	transition: 0.5s
+}
+
+.swiper-pagination-bullet:hover{
+	transform: scale(1.2, 1.2);	
+}
+
+.swiper-pagination-bullet-active{
+	background: #f0f8ff;
+	border: solid 1px rgba(0,0,0,0.2);
+	transform: scale(1.2, 1.2);
+}
+
+.swiper-img{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+.swiper-button-next{
+	background-image: url(Resources/home/icon/next.svg);
+	transform: scale(0.9, 0.9);
+	transition: 0.5s;
+}
+
+.swiper-button-next:hover{
+	transform: scale(1.1, 1.1);
+}
+
+.swiper-button-prev{
+	background-image: url(Resources/home/icon/prev.svg);
+	transform: scale(0.9, 0.9);
+	transition: 0.5s;
+}
+
+.swiper-button-prev:hover{
+	transform: scale(1.1, 1.1);
+}
+
+.title{
+	font-size: 3em;
+	font-weight: 1000;
+}
+
+.subtitle{
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.button{
+	padding: 10px 64px;
+	border: solid 1px;
+	font-size: 1em;
+}
 
 /*########################*/
 /*Product Division Styling*/
