@@ -216,6 +216,10 @@ body{
 	background-position: 0px;
 }
 
+.innerProductContainer a{
+	text-decoration: none;
+}
+
 /*#########################*/
 /*About Us Division Styling*/
 .aboutUsContainer{
