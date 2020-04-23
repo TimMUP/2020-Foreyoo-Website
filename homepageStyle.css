@@ -211,20 +211,59 @@ body{
 	transform: scale(1.1, 1.1);
 }
 
+.swiper-slider-txt{
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	
+}
+
 .title{
 	font-size: 3em;
 	font-weight: 1000;
+	display: block;
 }
 
 .subtitle{
 	font-size: 1.5em;
 	font-weight: 600;
+	display: block;
+}
+
+.description{
+	font-size: 0.8em;
+	font-weight: 300;
+	display: block;
 }
 
 .button{
 	padding: 10px 64px;
 	border: solid 1px;
 	font-size: 1em;
+}
+
+.black{
+	color: black;
+	border-color: black;
+	background: none;
+	transition: 0.5s;
+}
+
+.black:hover{
+	background-color: black;
+	color: aliceblue;
+}
+
+.white{
+	color: aliceblue;
+	border-color: aliceblue;
+	background: none;
+	transition: 0.5s;
+}
+
+.white:hover{
+	background-color: aliceblue;
+	color: black;	
 }
 
 /*########################*/
